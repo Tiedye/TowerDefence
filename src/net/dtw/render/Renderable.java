@@ -5,17 +5,20 @@
  */
 package net.dtw.render;
 
+import net.dtw.engine.EngineObject;
+
 /**
  *
  * @author Tiedye <tiedye1@hotmail.com>
  */
-public interface Renderable {
+public interface Renderable extends EngineObject {
     
+    // Create vao
     public void constructRenderable();
+    // Destroy vao
     public void destructRenderable();
     
+    // mount vao, render, unmount
     public void render();
-    
-    public boolean isDead();
     
 }

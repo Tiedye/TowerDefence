@@ -7,20 +7,21 @@ package net.dtw.render;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import net.dtw.engine.Engine;
 
 /**
  *
  * @author Tiedye <tiedye1@hotmail.com>
  */
-public class RenderEngine {
+public class RenderEngine implements Engine {
     
-    private ArrayList<Renderable> objects;
+    private final ArrayList<Renderable> objects;
     
     public RenderEngine() {
         objects = new ArrayList<>();
     }
     
-    public void render(){
+    public void update(){
         // remove dead objects, render those not dead
         for (Iterator<Renderable> iterator = objects.iterator(); iterator.hasNext();) {
             Renderable next = iterator.next();
