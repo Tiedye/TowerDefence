@@ -18,8 +18,8 @@ public interface Physical extends EngineObject {
     // all physical objects have these proporties
     public Vec2d getPos();
     public Vec2d getVel();
-    public double getRot();
-    public double getRVel();
+    //public double getRot();
+    //public double getRVel();
     public AABBd getBounds();
     
     // up to 64 interaction layers, and two masks together to see if two objects interact

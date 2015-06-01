@@ -5,8 +5,6 @@
  */
 package net.dtw.towerdefence;
 
-import net.dtw.math.AABBd;
-import net.dtw.math.Vec2d;
 import net.dtw.physics.Physical;
 import net.dtw.render.Renderable;
 
