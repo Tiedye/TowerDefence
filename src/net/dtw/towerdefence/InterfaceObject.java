@@ -21,7 +21,7 @@ public abstract class InterfaceObject implements Renderable {
     protected boolean dead;
     
     public InterfaceObject (){
-        bounds = new AABBd(0, 0, 0, 0);
+        bounds = AABBd.newAABB(0, 0, 0, 0);
         dragging = false;
         zOrder = 0;
         dead = false;
